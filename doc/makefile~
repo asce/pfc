@@ -1,0 +1,5 @@
+bib:
+	latex PFC
+	bibtex PFC
+	latex PFC
+	pdftex PFC

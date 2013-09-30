@@ -1,0 +1,1 @@
+\documentclass[11pt,a4paper,spanish]{book} %%%Esto indica el tipo de documento.Va a ser un libro (book), el tama

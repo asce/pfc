@@ -1,0 +1,74 @@
+\chapter{Integración en la plataforma SWAD}
+Insertar SWADE en una página web es tan sencillo como incluir el fichero swade.js en la página y elegir uno de los tres métodos que ofrece para instanciar este en los textarea o div.
+
+\begin{verbatim}
+<script src="path-to-swade/swade.js" type="text/javascript"></script>
+<script>
+SwadeManager.setOnDOMLoaded(function(){
+  SwadeManager.setSwadeByQuery("textarea.swade"); //1
+  SwadeManager.setSwadeById("swade-id");          //2
+  SwadeManager.setSwadeByClassName("swade-class");//3
+}                      
+);
+</script>  
+\end{verbatim}
+
+Con el primero de ellos instanciaremos un editor en aquellos textarea con la clase ``swade'', con el segundo lo haremos para los elementos div o textarea con id ``swade-id'' y con el último instanciaremos el editor para los elementos div o textarea con clase ``swade-class''.
+
+Sin embargo, a la hora de integrar SWADE en la plataforma SWAD uno de los mayores problemas al que nos enfrentamos es la codificación de caracteres. Nuestro editor permite la introducción de caracteres Unicode (UTF-8) mientras que SWAD usa una codificación ISO Latin 1 (iso-8859-1) por lo que tendremos que tener especial cuidado en el tratamiento del código HTML generado por el usuario.
+
+Si queramos enviar el contenido de un editor usando un formulario deberemos asignarle al atributo accept-charset el valor ``iso-8859-1''. De esta forma nos aseguramos que envíe como entidad los caracteres Unicode que ISO Latin 1 no reconoce. 
+
+\begin{verbatim}
+<form action="form.php" accept-charset="iso-8859-1">
+...
+</form>
+\end{verbatim}
+
+De la misma manera, en el servidor, tendremos que codificar los caracteres desconocidos con entidades cuando accedamos al valor que hemos enviado en el formulario. Pero antes de realizar esta tarea debemos asegurarnos de sanear el HTML para evitar ataques XSS~\cite{xss}.
+
+Para realizar esta tarea debemos crear el purificador:
+
+\begin{verbatim}
+require_once '../htmlpurifier/library/HTMLPurifier.auto.php';
+$config = HTMLPurifier_Config::createDefault();
+$config->set('Core.Encoding', 'ISO-8859-1'); // replace with your encoding
+$config->set('HTML.Doctype', 'HTML 4.01 Transitional'); // replace with your doctype
+$config->set('Core.EscapeNonASCIICharacters',true);
+//ISO-8859-1 -> UTF-8 -> clean html -> UTF-8 -> EscapeNonASCII -> ISO-8859-1
+// if we don't add that option the purifier will mess our entities
+$purifier = new HTMLPurifier($config);
+\end{verbatim}
+
+Debemos habilitar la opción EscapeNonASCIICharacters para visualizar correctamente los símbolos introducidos.
+
+
+Y para purificar usaremos:
+
+\begin{verbatim}
+$content = $purifier->purify($_POST['editor3'])
+\end{verbatim}
+
+
+En este punto podremos acceder al contenido:
+
+\begin{verbatim}
+   //htmlentities(string,flags,character-set,double_encode)
+   $content = htmlentities($content,0,'ISO-8859-1',TRUE);
+\end{verbatim}
+
+Como ya hemos dicho, usamos htmlentities para codificar los símbolos como entidades.
+
+Y una vez saneado el código, es seguro renderizarlo como HTML.
+
+\begin{verbatim}
+<div id="content" style="border:1px solid black;width:800px;min-height:250px;">
+<?php  echo html_entity_decode($content);
+/*Decodificamos entidades para mostrarlas*/
+?>
+</div>
+\end{verbatim}
+
+
+El ejemplo utilizado podemos encontrarlo en el directorio src/test/.
+

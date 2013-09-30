@@ -1,0 +1,9 @@
+\chapter{Diseño}
+
+\section{Formulas en {\LaTeX}}
+
+Desarrollaremos un plugin para el editor elegido que será el responsable de la inserción de formulas {\LaTeX} en formato png en el texto.
+
+El front-end de la aplicación usará mathjax para la previsualización de la fórmula introducida por el usuario mientras este la escribe. Una vez finalizada la inserción de esta se enviará una petición al servidor con el código {\LaTeX} introducido. 
+
+En el back-end el servidor usará texvc para validar y generar el png del código introducido. En caso de ser una fórmula inválida el servidor lo notificará y si la fórmula es válida se generará la imagen correspondiente a dicha formula y se enviará al cliente, el cual la insertará en el texto del editor.

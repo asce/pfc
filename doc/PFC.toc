@@ -1,0 +1,36 @@
+\select@language {spanish}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{17}{chapter.1}
+\contentsline {chapter}{\numberline {2}An\IeC {\'a}lisis}{21}{chapter.2}
+\contentsline {section}{\numberline {2.1}Requisitos funcionales}{21}{section.2.1}
+\contentsline {section}{\numberline {2.2}Visi\IeC {\'o}n global de la soluci\IeC {\'o}n}{22}{section.2.2}
+\contentsline {section}{\numberline {2.3}Integraci\IeC {\'o}n en la Plataforma}{23}{section.2.3}
+\contentsline {chapter}{\numberline {3}Estado del arte}{27}{chapter.3}
+\contentsline {section}{\numberline {3.1}Plataformas}{27}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Wikipedia}{27}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Stackoverflow}{29}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Renderizado de F\IeC {\'o}rmulas}{30}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}MathJax}{30}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Texvc}{31}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}tex2png}{31}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Editores WYSIWYG}{31}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}YUI Rich Text Editor}{32}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}TinyMCE}{32}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}NicEdit}{33}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}CKeditor}{34}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}openWYSIWYG}{35}{subsection.3.3.5}
+\contentsline {section}{\numberline {3.4}Conclusiones del An\IeC {\'a}lisis}{35}{section.3.4}
+\contentsline {chapter}{\numberline {4}Dise\IeC {\~n}o del editor}{39}{chapter.4}
+\contentsline {chapter}{\numberline {5}Resultados}{45}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusiones}{51}{chapter.6}
+\contentsline {chapter}{AP\IeC {\'E}NDICES}{53}{section*.29}
+\contentsline {chapter}{\numberline {A}Instalaci\IeC {\'o}n en el Servidor de OpenSWAD}{55}{chapter.1}
+\contentsline {chapter}{\numberline {B}Integraci\IeC {\'o}n en la plataforma SWAD}{59}{chapter.2}
+\contentsline {chapter}{\numberline {C}Software Libre y C\IeC {\'o}digo Abierto}{63}{chapter.3}
+\contentsline {chapter}{\numberline {D}Licencias de distribuci\IeC {\'o}n de Software Libre}{65}{chapter.4}
+\contentsline {section}{\numberline {D.1}MIT License}{65}{section.4.1}
+\contentsline {section}{\numberline {D.2}Mozilla Public License v2}{66}{section.4.2}
+\contentsline {section}{\numberline {D.3}BSD License}{66}{section.4.3}
+\contentsline {section}{\numberline {D.4}GNU General Public License}{66}{section.4.4}
+\contentsline {section}{\numberline {D.5}GNU Lesser General Public License}{67}{section.4.5}
+\contentsline {section}{\numberline {D.6}GNU Affero General Public License v3}{67}{section.4.6}
+\contentsline {chapter}{\numberline {E}C\IeC {\'o}digo del editor}{69}{chapter.5}

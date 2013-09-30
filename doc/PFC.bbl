@@ -1,0 +1,73 @@
+\begin{thebibliography}{10}
+
+\bibitem{mathjax}
+\url{http://www.mathjax.org/}.
+
+\bibitem{texvc}
+\url{http://www.mediawiki.org/wiki/Texvc}.
+
+\bibitem{htmlpurifier}
+\url{http://htmlpurifier.org/}.
+
+\bibitem{openswad}
+\url{http://openswad.org/}.
+
+\bibitem{swad:stat}
+\url{http://swad.ugr.es/stat/}.
+
+\bibitem{swad:info}
+\url{http://openswad.org/info/}.
+
+\bibitem{CKEditor:ckeditor}
+\url{http://cksource.com/license/ckeditor}.
+
+\bibitem{YUIEditor:yuieditor}
+\url{http://developer.yahoo.com/yui/editor/}.
+
+\bibitem{NicEdit:nicedit}
+\url{http://nicedit.com/}.
+
+\bibitem{TinyMCE:tinymce}
+\url{http://www.tinymce.com/}.
+
+\bibitem{openWYSIWYG:openwysiwyg}
+\url{http://www.openwebware.com/}.
+
+\bibitem{wikiform}
+\url{http://en.wikipedia.org/wiki/Help:Displaying_a_formula}.
+
+\bibitem{BSD:bsd}
+\url{http://opensource.org/licenses/bsd-license.php}.
+
+\bibitem{LGPL:lgpl}
+\url{http://www.gnu.org/licenses/lgpl.html}.
+
+\bibitem{MITL:mitl}
+\url{http://opensource.org/licenses/MIT}.
+
+\bibitem{GPL:gpl}
+\url{http://www.gnu.org/licenses/gpl.html}.
+
+\bibitem{MPL:mpl}
+\url{http://www.mozilla.org/MPL/2.0/}.
+
+\bibitem{xss}
+\url{http://en.wikipedia.org/wiki/Cross-site\_scripting}.
+
+\bibitem{AGPL:agpl}
+\url{http://www.gnu.org/licenses/agpl-3.0.html}.
+
+\bibitem{StallmanFreeSoftware}
+R.~Stallman.
+\newblock Por qué el código abierto pierde el punto de vista del software
+  libre.
+\newblock Website.
+\newblock
+  \url{http://www.gnu.org/philosophy/open-source-misses-the-point.es.html}.
+
+\bibitem{xyne:tex2png}
+Xyne.
+\newblock Website.
+\newblock \url{http://xyne.archlinux.ca/projects/tex2png/}.
+
+\end{thebibliography}

@@ -1,0 +1,74 @@
+\chapter{Editores WYSIWYG}
+
+\section{Editores Analizados}
+\subsection{YUI Rich Text Editor~\cite{YUIEditor:yuieditor}}
+\begin{itemize}
+\item[Web:] \url{http://yuilibrary.com/yui/docs/editor/}
+
+\item[Descripci'on:] Basado en la librería YUI de Yahoo, este editor sustituye el textarea estandar de HTML por un editor bastante completo. Permite dar un formato de texto enriquecido, incluyendo elementos para modificar la estructura del texto como listas, elementos para dar formato e inclusión de imágenes drag-and-drop y redimensionado de estas. Permite soporte para plugins y tiene dos modos, normal y simple (con un conjunto de características mas reducido)
+
+\item[Licencia:] Licencia BSD~\cite{BSD:bsd}
+\item[Complejidad:] Media-Alta
+\end{itemize}
+
+\begin{figure}[h!]
+  \centering
+      \includegraphics[width=4in]{fig/yuie1}
+  \caption{YUI Editor}
+\end{figure}
+
+\subsection{TinyMCE~\cite{TinyMCE:tinymce}}
+\begin{itemize}
+\item[Web:] \url{http://www.tinymce.com/}
+\item[Descripci'on:] Este popular editor WYSIWYG transforma nuestro tradicional textarea por un conjunto de elementos HTML para construir el menú de formato, esta herramienta es muy usada por diversos CMS Open Source, es muy fácil de integrar, permite la personalización de botones en la barra de herramientas y tiene opciones para configurar el menú de formato limitando botones. 
+\item[Licencia:] Distribuido la licencia de código abierto LGPL~\cite{LGPL:lgpl}.
+\item[Integración:] Fácil de integrar y personalizar.
+\end{itemize}
+
+\begin{figure}[h!]
+  \centering
+      \includegraphics[width=4in]{fig/tmce1}
+  \caption{Tinymce Editor}
+\end{figure}
+
+\subsection{NicEdit~\cite{NicEdit:nicedit}}
+\begin{itemize}
+\item[Web:] \url{http://nicedit.com/}
+\item[Descripci'on:] Este ligero editor WYSIWYG se caracteriza por su flexibilidad, sencillez y capacidad de personalización. Permite transformar cualquier elemento div o textarea en un editor de texto enriquecido. 
+\item[Licencia:] Licencia MIT~\cite{MITL:mitl}
+\item[Integración:] Facil integración con un par de líneas de código.
+\end{itemize}
+\begin{figure}[h!]
+  \centering
+      \includegraphics[width=4in]{fig/nice1}
+  \caption{NicEdit Editor}
+\end{figure}
+
+\subsection{CKeditor}
+\begin{itemize}
+\item[Web:] \url{http://ckeditor.com/}
+\item[Descripci'on:] Este editor WYSIWYG es muy potente y estable a la vez que flexible. Ampliamente usado, cuenta con una trayectoria de 10 años en el mercado. Además genera código xhtml de calidad, permitiendo su edición y parsea el contenido para que este no afecte a la página que contiene al editor.
+\item[Licencia:] Distribuido bajo las licencias de codigo abierto GPL~\cite{GPL:gpl}, LGPL~\cite{LGPL:lgpl} y MPL~\cite{MPL:mpl}.
+\item[Integración:]
+\end{itemize}
+\begin{figure}[h!]
+  \centering
+      \includegraphics[width=4in]{fig/cke1}
+  \caption{CKEditor}
+\end{figure}
+
+\subsection{openWYSIWYG}
+\begin{itemize}
+\item[Web:] \url{http://www.openwebware.com}
+\item[Descripci'on:] Este sencillo editor se presenta como ideal para mejorar tu CMS. Como los anteriores replaza textarea por un editor de texto. Parece ser que en la actualidad se encuentra obsoleto y presenta incompatibilidades con los navegadores actuales.
+\item[Licencia:] Licencia de código abierto LGPL~\cite{LGPL:lgpl}
+\item[Integración:] Algunas líneas de Javascript.
+\end{itemize}
+\begin{figure}[h!]
+  \centering
+      \includegraphics[width=4in]{fig/opene1}
+  \caption{openWYSIWYG Editor}
+\end{figure}
+
+
+\section{Conclusiones del Análisis}

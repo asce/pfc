@@ -1,0 +1,37 @@
+\chapter{Integración en la plataforma SWAD}
+
+A la hora de integrar SWADE en la plataforma SWAD uno de los mayores problemas al que nos enfrentamos es la codificación de caracteres. Nuestro editor permite la introducción de caracteres Unicode (UTF-8) mientras que SWAD usa una codificación ISO Latin 1 (iso-8859-1) por lo que tendremos que tener especial cuidado en el tratamiento del código HTML generado por el usuario.
+
+Si queramos enviar el contenido de un editor usando un formulario deberemos asignarle al atributo accept-charset el valor "UTF-8".
+
+\begin{verbatim}
+<form action="form.php" accept-charset="UTF-8">
+...
+</form>
+\end{verbatim}
+
+De la misma manera, en el servidor, tendremos que codificar los caracteres unicode con entidades cuando accedamos al valor que hemos enviado en el formulario.
+
+En php se haría de la siguiente forma:
+\begin{verbatim}
+$content = htmlentities($_POST['editor3']);
+\end{verbatim}
+
+En este punto es muy recomendable sanear el código HTML recibido para así evitar amenazas XSS~\cite{xss}.
+
+\begin{verbatim}
+include '../content_parser.php';
+$parsed_content = parse_content($content);
+\end{verbatim}
+
+Y una vez saneado el código, es seguro representarlo como texto enriquecido.
+
+\begin{verbatim}
+<div id="content" style="border:1px solid black;width:800px;min-height:250px;">
+<?php  echo html_entity_decode($parsed_content);
+/*Decodificamos entidades para mostrarlas*/
+?>
+</div>
+\end{verbatim}
+
+

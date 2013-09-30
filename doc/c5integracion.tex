@@ -1,0 +1,13 @@
+\chapter{Integración en SWAD}
+
+Modulos:
+- Editor JS
+- Sustitutitución de divs por Swade
+- Limpieza de html producido en el Servidor
+Ejemplo:
+static string SanitizeHtml(string html)
+{
+    string acceptable = ``script|link|title'';
+    string stringPattern = @''</?(?(?='' + acceptable + @'')notag|[a-zA-Z0-9]+)(?:\s[a-zA-Z0-9\-]+=?(?:([",']?).*?\1?)?)*\s*/?>'';
+    return Regex.Replace(html, stringPattern, ``sausage'');
+}

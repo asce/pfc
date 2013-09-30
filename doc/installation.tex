@@ -1,0 +1,69 @@
+\chapter{Instalación en el Servidor de OpenSWAD}
+
+El servidor donde se encuentra OpenSWAD usa una instalación mínima del SO Linux CentOS 5.7 en su versión de 64 bits. SWADE usa distintas herramientas libres para desarrollar parte de su funcionalidad. Estas herramientas son HTMLpurifier~\cite{htmlpurifier}, texvc~\cite{texvc} y MathJax~\cite{mathjax}, ya comentadas anteriormente. A continuación describiremos el proceso de instalación de dichas herramientas.
+
+En primer lugar instalamos mediawiki y la última versión de php en el servidor. Mediawiki se usará para una futura implementación de una wiki para OpenSWAD, lo cuál no pertenece al ámbito de este documento. La instalación de php, sin embargo, era necesaria ya que actualmente no se usa php en la plataforma y nos será de utilidad para algunas de las funciones que vamos a desarrollar.
+
+HTMLpurifier se usa para filtrar el código HTML generado y protegernos de la inyección de posible código malicioso. Deberá instalarse en el fichero raíz de SWADE como htmlpurifier. La página de dicha herramienta es: http://htmlpurifier.org/. Será necesario configurar la codificación de caracteres y doctype en el fichero content\_parser.php. Existe un ejemplo de uso de la función de filtrado en test/form.php.
+
+Para usar la caché de HTMLpurifier será necesario dar permisos de escritura a los directorios que cuelgan de library/HTMLPurifier/DefinitionCache/Serializer. Para ello usaremos el comando: 
+
+\begin{verbatim}
+chmod -R 0755 library/HTMLPurifier/DefinitionCache/Serializer
+\end{verbatim}
+
+Texvc se usa para generar las imágenes de las formulas LaTeX y forma parte de la extensión math de mediawiki. Antes de compilar dicha herramienta debemos instalar sus dependencias, que son:
+\begin{itemize}
+\item ocaml
+\item LaTeX
+\item dvipng
+\end{itemize}
+
+La última ya se encuentra instalada así que nos centramos en la instalación de las otras dos. 
+
+Para instalar ocaml descargamos las fuentes de su página oficial (\url={http://caml.inria.fr/download.en.html}) y a continuación la compilamos e instalamos con los siguientes comandos:
+
+\begin{verbatim}
+./configure
+make world
+make opt
+sudo make install
+make clean
+\end{verbatim}
+
+LaTeX podemos instalando usando el gestor de paquetes yum mediante el comando: \begin{verbatim}yum install tetex\end{verbatim}
+
+Finalmente para la compilación de la herramienta texvc, una vez resueltas sus dependencias, nos bajamos la extensión math de mediawiki de su página: \url{http://www.mediawiki.org/wiki/Special:ExtensionDistributor?extdist_extension=Math}. 
+Una vez descargados los ficheros fuente, accedemos al directorio math/ y ejecutamos el comando: \begin{verbatim}make\end{verbatim}
+
+Será necesario copiar el binario generado dentro del directorio tex\_editor, que se encuentra en el directorio raíz de SWADE.
+
+
+Deberemos compilar dicha herramienta e incluirla en la carpeta tex\_editor (o en el path). Para la generación de las imágenes de las fórmulas debemos dar permisos de escritura a las carpetas tex\_editor/img y tex\_editor/tmp. Podemos modificar la localización de estas carpetas en el script php tex\_editor/tex2png.php. Para más información acerca de texvc consultar: \url{http://www.mediawiki.org/wiki/Texvc} 
+
+En el caso de no generarse correctamente las imágenes de las fórmulas debemos consultar si tenemos instalados las herramientas latex, dvips, gs y convert (ImageMagick).
+
+\begin{verbatim}
+which latex
+which dvips
+which gs
+which convert
+\end{verbatim}
+
+En nuestro caso tuvimos que instalar ImageMagick con:
+
+\begin{verbatim}
+yum install ImageMagick
+\end{verbatim}
+
+Si se generan los archivos temporales .tex pero no se genera la imagen el problema puede solucionarse copiando a la carpeta de los archivos temporales el fichero latex.fmt. Este fichero puede estar en varios sitios, en nuestro caso se encontraba en ~/.texmf-var/web2c/latex.fmt. En caso de no aparecer en dicha ruta usar el comando find.
+
+\begin{verbatim}
+find ~ -name latex.fmt
+\end{verbatim}
+
+Para cualquier otro problema en el uso de texvc consultar \url{http://www.mediawiki.org/wiki/Manual:Enable_TeX/problems}.
+
+ 
+Para la visualización de las fórmulas LaTeX mientras el usuario escribe su código se usa la herramienta MathJax. Dicha herramienta deberá instalarse en la carpeta tex\_editor de SWADE. La página de dicha herramienta es http://www.mathjax.org/
+

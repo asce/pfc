@@ -1,0 +1,8 @@
+\chapter*{Resumen}
+
+En el presente documento se introduce SWADE, el editor WYSIWYG para la plataforma SWAD. SWADE surge principalmente ante la necesidad de SWAD de permitir la introducción de fórmulas y texto enriquecido por parte del usuario. Los principios básicos en el desarrollo  de SWADE han sido la usabilidad, la sencillez y la independencia de SWAD, intentando cubrir los objetivos propuestos con la solución más ligera posible. 
+
+El proyecto se puede descomponer en tres módulos bien diferenciados, que son la inserción de texto enriquecido, las fórmulas y el saneamiento posterior del código HTML generado. Para la inserción de texto enriquecido hemos desarrollado nuestro propio editor en JavaScript, evitando el uso de cualquier Framework, para así poder obtener una solución lo más ligera posible. Es necesario para la inserción de fórmulas que el usuario tenga unas nociones básicas de TeX. Para la visualización de las fórmulas y la generación posterior de los ficheros png hemos usado MathJax~\cite{mathjax} y Texvc~\cite{texvc} respectivamente. Para el saneamiento del código HTML generado hemos usado HTMLpurifier~\cite{htmlpurifier}.   
+
+Finalmente se ha implantado el editor en la plataforma OpenSWAD~\cite{openswad} donde se espera seguir realizando pruebas para su posterior implantación en la plataforma SWAD. 
+

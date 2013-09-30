@@ -1,0 +1,35 @@
+\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 1
+\BOOKMARK [0][-]{chapter.2}{An\341lisis}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Requisitos funcionales}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{Visi\363n global de la soluci\363n}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.3}{Integraci\363n en la Plataforma}{chapter.2}% 5
+\BOOKMARK [0][-]{chapter.3}{Estado del arte}{}% 6
+\BOOKMARK [1][-]{section.3.1}{Plataformas}{chapter.3}% 7
+\BOOKMARK [2][-]{subsection.3.1.1}{Wikipedia}{section.3.1}% 8
+\BOOKMARK [2][-]{subsection.3.1.2}{Stackoverflow}{section.3.1}% 9
+\BOOKMARK [1][-]{section.3.2}{Renderizado de F\363rmulas}{chapter.3}% 10
+\BOOKMARK [2][-]{subsection.3.2.1}{MathJax}{section.3.2}% 11
+\BOOKMARK [2][-]{subsection.3.2.2}{Texvc}{section.3.2}% 12
+\BOOKMARK [2][-]{subsection.3.2.3}{tex2png}{section.3.2}% 13
+\BOOKMARK [1][-]{section.3.3}{Editores WYSIWYG}{chapter.3}% 14
+\BOOKMARK [2][-]{subsection.3.3.1}{YUI Rich Text Editor}{section.3.3}% 15
+\BOOKMARK [2][-]{subsection.3.3.2}{TinyMCE}{section.3.3}% 16
+\BOOKMARK [2][-]{subsection.3.3.3}{NicEdit}{section.3.3}% 17
+\BOOKMARK [2][-]{subsection.3.3.4}{CKeditor}{section.3.3}% 18
+\BOOKMARK [2][-]{subsection.3.3.5}{openWYSIWYG}{section.3.3}% 19
+\BOOKMARK [1][-]{section.3.4}{Conclusiones del An\341lisis}{chapter.3}% 20
+\BOOKMARK [0][-]{chapter.4}{Dise\361o del editor}{}% 21
+\BOOKMARK [0][-]{chapter.5}{Resultados}{}% 22
+\BOOKMARK [0][-]{chapter.6}{Conclusiones}{}% 23
+\BOOKMARK [0][-]{section*.29}{AP\311NDICES}{}% 24
+\BOOKMARK [0][-]{chapter.1}{Instalaci\363n en el Servidor de OpenSWAD}{}% 25
+\BOOKMARK [0][-]{chapter.2}{Integraci\363n en la plataforma SWAD}{}% 26
+\BOOKMARK [0][-]{chapter.3}{Software Libre y C\363digo Abierto}{}% 27
+\BOOKMARK [0][-]{chapter.4}{Licencias de distribuci\363n de Software Libre}{}% 28
+\BOOKMARK [1][-]{section.4.1}{MIT License}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.2}{Mozilla Public License v2}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.3}{BSD License}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.4}{GNU General Public License}{chapter.4}% 32
+\BOOKMARK [1][-]{section.4.5}{GNU Lesser General Public License}{chapter.4}% 33
+\BOOKMARK [1][-]{section.4.6}{GNU Affero General Public License v3}{chapter.4}% 34
+\BOOKMARK [0][-]{chapter.5}{C\363digo del editor}{}% 35

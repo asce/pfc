@@ -1,0 +1,79 @@
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: PFC.aux
+A level-1 auxiliary file: Acta/Acta.aux
+A level-1 auxiliary file: prologo.aux
+A level-1 auxiliary file: intro.aux
+A level-1 auxiliary file: analysis.aux
+A level-1 auxiliary file: state.aux
+A level-1 auxiliary file: design.aux
+A level-1 auxiliary file: results.aux
+A level-1 auxiliary file: conclusions.aux
+A level-1 auxiliary file: installation.aux
+A level-1 auxiliary file: integracion.aux
+A level-1 auxiliary file: openSource.aux
+A level-1 auxiliary file: licencias.aux
+A level-1 auxiliary file: swade_code.aux
+The style file: abbrv.bst
+Database file #1: bsample.bib
+Warning--to sort, need author or key in mathjax
+Warning--to sort, need author or key in texvc
+Warning--to sort, need author or key in htmlpurifier
+Warning--to sort, need author or key in openswad
+Warning--to sort, need author or key in swad:stat
+Warning--to sort, need author or key in swad:info
+Warning--to sort, need author or key in CKEditor:ckeditor
+Warning--to sort, need author or key in YUIEditor:yuieditor
+Warning--to sort, need author or key in NicEdit:nicedit
+Warning--to sort, need author or key in TinyMCE:tinymce
+Warning--to sort, need author or key in openWYSIWYG:openwysiwyg
+Warning--to sort, need author or key in wikiform
+Warning--to sort, need author or key in BSD:bsd
+Warning--to sort, need author or key in LGPL:lgpl
+Warning--to sort, need author or key in MITL:mitl
+Warning--to sort, need author or key in GPL:gpl
+Warning--to sort, need author or key in MPL:mpl
+Warning--to sort, need author or key in xss
+Warning--to sort, need author or key in AGPL:agpl
+You've used 21 entries,
+            2118 wiz_defined-function locations,
+            568 strings with 5206 characters,
+and the built_in function-call counts, 3193 in all, are:
+= -- 249
+> -- 33
+< -- 0
++ -- 25
+- -- 4
+* -- 107
+:= -- 328
+add.period$ -- 26
+call.type$ -- 21
+change.case$ -- 45
+chr.to.int$ -- 0
+cite$ -- 40
+duplicate$ -- 147
+empty$ -- 482
+format.name$ -- 4
+if$ -- 777
+int.to.chr$ -- 0
+int.to.str$ -- 21
+missing$ -- 0
+newline$ -- 71
+num.names$ -- 4
+pop$ -- 249
+preamble$ -- 1
+purify$ -- 44
+quote$ -- 0
+skip$ -- 142
+stack$ -- 0
+substring$ -- 105
+swap$ -- 21
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 84
+warning$ -- 19
+while$ -- 4
+width$ -- 23
+write$ -- 117
+(There were 19 warnings)
